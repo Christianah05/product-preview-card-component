@@ -1,0 +1,162 @@
+:root{
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+   background-color: var(--cream);
+}
+
+#container{
+    display: flex;
+    width: 55%;
+    height: 50%;
+    margin: 5% 33%;
+    border-radius: 15px;
+    margin-top: 10rem;
+}
+
+#desktop-img{
+    display: block;
+    height: 47vh;
+    width: 16vw;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#mobile-img{
+    display: none;
+}
+
+#content{
+    background-color: var(--white);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 30px 0 30px 30px;
+    width: 16vw;
+    height: 47vh;
+}
+
+#top{
+    letter-spacing: 5px;
+    color: var(--darkGrayishBlue);
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+h2{
+    color: var(--veryDarkBlue);
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-weight: 700;
+    width: 200px;
+    line-height: 0.8cm;
+    margin-bottom: 1.5rem;
+}
+
+#main-paragraph{
+    color: var(--darkGrayishBlue);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7;
+    width: 250px; 
+    padding: 0 15px 25px 0;
+}
+
+#price{
+    color: var(--darkCyan);
+    display: flex;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    justify-self: center;
+    align-items: center;
+    padding: 0 0 20px 0;
+}
+
+span{
+    color: var(--darkGrayishBlue);
+    font-size: 14px;
+    padding-left: 20px;
+    font-weight: 400;
+    opacity: 0.9;
+    text-decoration: line-through;
+}
+
+button{
+    background-color: var(--darkCyan);
+    color: var(--white);
+    padding: 12px 60px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+button:hover{
+    background-color: hsla(128, 47%, 10%, 0.8);
+    cursor: pointer;
+}
+
+button img{
+    padding-right: 10px;
+    height: 13px;
+}
+
+/* mobile-view specification */
+@media only screen and (max-width:600px) {
+    #container{
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        margin: 20px 5%;
+    }
+
+    #desktop-img{
+        display: none;
+    }
+
+    #mobile-img{
+        display: block;
+        width: 100%;
+        height: 80%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    #content{
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        width: 100%;
+    }
+
+    h2{
+        padding-right: 10px;
+    }
+
+    #main-paragraph{
+        padding: 0 5px 20px 0;
+        font-size: 14px;
+        width: 300px;
+    }
+
+    #price{
+        padding: 0 0 20px 0;
+    }
+
+    button{
+        padding: 15px 90px;
+    }
+}
