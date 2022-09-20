@@ -28,7 +28,7 @@ body{
 
 #desktop-img{
     display: block;
-    height: 47vh;
+    height: 50vh;
     width: 16vw;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -44,7 +44,7 @@ body{
     border-bottom-right-radius: 15px;
     padding: 30px 0 30px 30px;
     width: 16vw;
-    height: 47vh;
+    height: 50vh;
 }
 
 #top{
