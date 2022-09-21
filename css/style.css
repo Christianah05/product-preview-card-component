@@ -29,7 +29,7 @@ body{
 #desktop-img{
     display: block;
     height: 50vh;
-    width: 16vw;
+    width: 20vw;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
@@ -43,7 +43,7 @@ body{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     padding: 30px 0 30px 30px;
-    width: 16vw;
+    width: 20vw;
     height: 50vh;
 }
 
